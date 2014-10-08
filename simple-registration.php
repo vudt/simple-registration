@@ -47,7 +47,7 @@ class SimpleRegistration {
         } else if ($_GET['type'] == 'district') {
             $result = $this->get_location_where($_GET['val'], 'wards', 'wardid', 'name', 'districtid');
             echo json_encode($result);
-            exit;
+            exit();
         }
     }
     
