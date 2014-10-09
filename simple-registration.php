@@ -18,7 +18,7 @@ class SimpleRegistration {
     function __construct() {
         add_action('init', array($this, 'do_output_buffer'));
         add_action('wp_enqueue_scripts', array($this, 'register_scripts'));
-        add_action('admin_enqueue_scripts', array($this, 'vu_register_scripts'));
+        add_action('admin_enqueue_scripts', array($this, 'register_scripts'));
         add_action('wp_ajax_registration_location', array($this, 'callback_ajax_location'));
         add_action('wp_ajax_nopriv_registration_location', array($this, 'callback_ajax_location'));
         add_action('show_user_profile', array($this, 'display_user_meta'));
